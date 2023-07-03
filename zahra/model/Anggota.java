@@ -5,28 +5,27 @@
  */
 package zahra.model;
 
-/**
- *
- * @author zahra
- */
+
 public class Anggota {
     private String kodeanggota;
     private String namaanggota;
     private String alamat;
-    private String jeniskelamin;
+    private String jeniskelammin;
     
-    public  Anggota (){
+    //method construktor
 
+    public Anggota() {
     }
 
-    public Anggota(String kodeanggota, String namaanggota, String alamat, String jeniskelamin) {
+    public Anggota(String kodeanggota, String namaanggota, String alamat, String jeniskelammin) {
         this.kodeanggota = kodeanggota;
         this.namaanggota = namaanggota;
         this.alamat = alamat;
-        this.jeniskelamin = jeniskelamin;
+        this.jeniskelammin = jeniskelammin;
     }
     
-    
+    //method accesor
+
     public String getKodeanggota() {
         return kodeanggota;
     }
@@ -51,11 +50,13 @@ public class Anggota {
         this.alamat = alamat;
     }
 
-    public String getJeniskelamin() {
-        return jeniskelamin;
+    public String getJeniskelammin() {
+        return jeniskelammin;
     }
 
-    public void setJeniskelamin(String jeniskelamin) {
-        this.jeniskelamin = jeniskelamin;
+    public void setJeniskelammin(String jeniskelammin) {
+        this.jeniskelammin = jeniskelammin;
     }
+    
+    
 }
