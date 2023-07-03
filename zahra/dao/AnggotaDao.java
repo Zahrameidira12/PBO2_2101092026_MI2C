@@ -5,14 +5,18 @@
  */
 package zahra.dao;
 
-import zahra.dao.AnggotaDao;
-import java.sql.Connection;
 import zahra.model.Anggota;
-/**
- *
- * @author zahra
- */
+import java.util.List;
+import java.sql.Connection;
+
+
+
+
 public interface AnggotaDao {
-    void insert(Connection con, Anggota anggota) throws Exception;
+    public void insert(Connection con, Anggota anggota) throws Exception;
+    public void update(Connection con, Anggota anggota) throws Exception;
+    public void delete(Connection con, Anggota anggota) throws Exception;
+    public Anggota getAnggota(Connection con, String kode) throws Exception;
+    public List<Anggota> getAllAnggota(Connection con) throws Exception;
     
 }

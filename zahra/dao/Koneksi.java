@@ -5,17 +5,13 @@
  */
 package zahra.dao;
 
-/**
- *
- * @author zahra
- */
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-        
+
+
 public class Koneksi {
-    private String url = "jdbc:mysql://localhost/pbo2_2101092026";
+    private String url = "jdbc:mysql://localhost/pbo2__2101092026";
     private String username = "root";
     private String password = "";
     
